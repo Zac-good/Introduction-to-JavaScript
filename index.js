@@ -33,9 +33,13 @@ Do the following:
 
    HINT: no function required
 */
-var x = 1;
-var y = 2;
+var variableX = 'value1';
+var variableY = 'value2';
 
+if (variableY === 'value2') {
+  variableX = 'value3'
+  console.log(variableX)
+}
 
 
 
@@ -79,8 +83,8 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(5){
-    /*add your code here*/
+function dogYears(age){
+    return age*7;
 }
 
 
