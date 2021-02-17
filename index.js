@@ -33,7 +33,8 @@ Do the following:
 
    HINT: no function required
 */
-var 
+var x = 1;
+var y = 2;
 
 
 
@@ -48,8 +49,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
+var string = "1999";
+ string = Number(string);
+ console.log(string);
 
 
 /*
@@ -65,7 +67,7 @@ function multiply(a, b){
     return a * b;
   }
 
-console.log(multiply(2, 4))
+multiply(2, 4);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -77,7 +79,7 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
+function dogYears(5){
     /*add your code here*/
 }
 
@@ -136,11 +138,36 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.random();
 
-function game(user, computer){
-    /*add your code here*/
+if (computer >= .6) {
+  computer = "rock";
+} else if (computer === .5) {
+  computer = "scissors";
+} else {
+  computer = "paper";
 }
+
+function game(user, computer) {
   
+  if (user === computer) {
+    return "its a tie";
+  } else if (user === "scissors" && computer === "rock") {
+    return "you lose";
+  } else if (user === "scissors" && computer === "paper") {
+    return "you win";
+  } else if (user === "paper" && computer ==="scissors") {
+    return "you lose";
+  } else if (user === "paper" && computer === "rock") {
+    return "you win";
+  } else if (user === "rock" && computer === "paper") {
+    return "you lose";
+  } else if (user === "rock" && computer === "scissors") {
+
+  }
+}
+
+ 
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -154,7 +181,7 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles(km){
     /*add your code here*/
   }
 
