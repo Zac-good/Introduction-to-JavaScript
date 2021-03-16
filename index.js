@@ -24,7 +24,7 @@ if(votingAge >= 18){
 }else{
   console.log(false);
 }
-
+console.log('task 1a:', votingAge);
 /*
 Task 1b - Values
 
@@ -36,10 +36,13 @@ Do the following:
    HINT: no function required
 */
 
-var one = 1;
-var two = 2;
+let variable1 = 'value1';
+let variable2 = 'value2';
 
-
+if(variable2 === 'value2'){
+  variable1 = 'value3';
+}
+console.log('task 1b:', variable1);
 
 
 /*
@@ -52,7 +55,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+var string = "1999";
+ string = Number(string);
+ console.log('task 1c:', string);
 
 
 
@@ -65,10 +70,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b){
+    return a * b;
   }
-
+console.log('task 1d:', multiply(3,2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -84,7 +89,7 @@ Do the following:
 function dogYears(age){
     return age * 7;
 }
-console.log(dogYears(1));
+console.log('task 2:', dogYears(1));
 
 
 
@@ -136,7 +141,7 @@ function hungryDog(weight, age){
   }
   return lbsOfFood;
 }
-
+console.log('task 3:', hungryDog(15, 1));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -195,9 +200,11 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+function miles(kilometers){
+    const factor = 0.621371;
+   return kilometers * factor;
+}
+  console.log('task 5:', miles(3));
 
 
 
@@ -209,10 +216,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(centimeters){
+    return centimeters / 30.48;
   }
- 
+ console.log('task 5b:', feet(6));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -225,10 +232,13 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(num){
+        for( let i = 0; i <= num; i++){
+        const remaining = num - 1;
+        return `${num} bottles of soda on the wall, ${num} bottles of soda, take one down pass it around ${remaining} bottles of soda on the wall`;
+        }
   }
-
+console.log('task 6:', annoyingSong(5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
