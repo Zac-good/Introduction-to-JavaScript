@@ -18,7 +18,12 @@ Do the following:
    HINT: no function required
 */
 
-
+var votingAge = 18;
+if(votingAge >= 18){
+  console.log(true);
+}else{
+  console.log(false);
+}
 
 /*
 Task 1b - Values
@@ -31,6 +36,8 @@ Do the following:
    HINT: no function required
 */
 
+var one = 1;
+var two = 2;
 
 
 
@@ -74,9 +81,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    return age * 7;
 }
+console.log(dogYears(1));
 
 
 
@@ -107,8 +115,8 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(weight, age){
+    if(age ===)
   }
 
 
@@ -145,7 +153,7 @@ console.log(computer);
 
 function game(user, computer){
     if(user === computer){
-      return `It's a tie!!`;
+      return `it's a tie`;
     }else if(user === 'rock' && computer === 'scissors'){
       return `you win!`;
     }else if(user === 'paper' && computer === 'rock'){
